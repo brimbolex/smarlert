@@ -1,0 +1,20 @@
+{
+  "job_name": "Residenztheater heute",
+  "source": {
+    "url": "https://www.residenztheater.de/spielplan",
+    "method": "GET",
+    "format": "html",
+    "timeout_seconds": 20,
+    "headers": {
+      "User-Agent": "smarlert/1.0"
+    },
+    "extract": {
+      "type": "today_date"
+    }
+  },
+  "signal": {
+    "account": "+15551234567",
+    "recipient": "+15557654321"
+  },
+  "state_file": ".smarlert-state.json"
+}
